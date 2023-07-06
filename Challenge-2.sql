@@ -1,5 +1,5 @@
 1.How many runners signed up for each 1 week period? (i.e. week starts 2021-01-01)
-SELECT DATE_TRUNC(&#39;WEEK&#39;, r.registration_date) + INTERVAL &#39;4days&#39; week,
+SELECT DATE_TRUNC('WEEK', r.registration_date) + INTERVAL '4days' week,
 COUNT(r.runner_id ) no_of_signed_up_runner
 FROM pizza_runner.runners r
 GROUP BY 1
